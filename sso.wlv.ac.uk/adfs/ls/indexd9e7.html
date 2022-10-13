@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from sso.wlv.ac.uk/adfs/ls/?SAMLRequest=fVHLbsIwEPwVa+95p2likSBahIpERURCD70Z40DUxKZeJ%2FTzm%2FJQ6aEc1zuzM54Zjb%2FahvRCY61kCp7tAhGSq20tdymsy5kVwzgbIWsb%2F0AnndnLlfjsBBoyECXS8yaFTkuqGNZIJWsFUsNpMXldUN926UEro7hqgEwQhTaD1LOS2LVCF0L3NRfr1SKFvTEHpI5z5C3ax6a3Gbe7D8cI3daSNZXqtPMj5xTFEsh08DA8m5PvKxVR3TDZtkKnQQfITGkuTu5TqFiDAsh8mgKLouAxqHgUhKGXPASBG9bVZidiN0h4OGAwZ4h1L35ZiJ2YSzRMmhR814stz7fcpHQTGoY09G0vjt6B5JcvP9XyHOW9fDZnENKXssytfFmUQN6ulQwAuBRAT+r6Nvn7h9k1bsj+CXfk3F7OLuPfprNv by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Oct 2022 13:21:30 GMT -->
+<!-- Mirrored from sso.wlv.ac.uk/adfs/ls/?SAMLRequest=nZJRT8IwFIXf%2FRVL37d1kzDXbCQIMZKgEkAffCvdBRq3dva2qP%2FebmhCQuTBp6a3p%2Fc7PbcF8qZu2djZvVrCuwO0wWdTK2T9QUmcUUxzlMgUbwCZFWw1fpizNKKsNdpqoWsSzKYl2QzEoII0qcS1SIZ5mouq8rttlg5vtqkYUA7ZgFKeAQlewKDUqiS+jb+N6GCm0HJlfYkmWUjzkCZrmrM0ZzR5JcHih3UrVSXV7rKxzVGE7H69XoSLp9WaBGNEMNZDJ1qha8CswBykgOflvCR7a1tkcSy4OnCMPupDxEXk3uJa76SKuyzIqOgW1ps1JyFdtsJ%2FsWTUQTyjay79Y40T1hmIhG56QFrEJ4DRVXEczaNvOZsudC3F139Gc6dNw+3f6iRK+oqswm0vZU5hC0JuJVQ+trrWHxMD3EJJvGfwOcTnzrzd+Pwrjb4B by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Oct 2022 13:49:02 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -12,12 +12,7 @@
         <meta http-equiv="expires" content="-1"/>
         <meta name='mswebdialog-title' content='Connecting to University of Wolverhampton'/>
 
-        <title>Error</title>
-        <script type='text/javascript'>
-//<![CDATA[
-function Errors(){this.reportSubject = 'Error Report'; }
-//]]>
-</script>
+        <title>Login</title>
 
 
         
@@ -48,68 +43,112 @@ function Errors(){this.reportSubject = 'Error Report'; }
         
         
         
-    <div id="errorArea"> 
-        <div id="openingMessage" class="groupMargin bigText">
-            An error occurred 
-        </div> 
-
-        <div id="errorMessage" class="groupMargin">
-            An error occurred. Contact your administrator for more information. 
-        </div>
-        
-
-        <div style="display:none">
-            <a class="actionLink" href="#" id="ReportByEmail" onclick="ERR.report(''); return false;"></a>
-        </div>
-
-        <a class="actionLink" href="#" id="errorDetailsLink" onclick="ERR.showDetails(); return false;">Error details</a>
-        <ul id="errorDetails" class="indent block smallText" style="display:none">
-            <li id='activityID'>Activity ID: 824e69d8-c10e-4693-1d07-0080010000c8</li>         
-                        
-            <li>Error time: Thu, 13 Oct 2022 13:21:28 GMT</li>
-        </ul>
-
-        <script type="text/javascript">
+        <div id="loginArea">        
+            <div id="loginMessage" class="groupMargin">Sign in with your organizational account</div>
+    
+            <form method="post" id="loginForm" autocomplete="off" novalidate="novalidate" onKeyPress="if (event && event.keyCode == 13) Login.submitLoginRequest();" action="/adfs/ls/?SAMLRequest=nZJRT8IwFIXf%2FRVL37d1kzDXbCQIMZKgEkAffCvdBRq3dva2qP%2FebmhCQuTBp6a3p%2Fc7PbcF8qZu2djZvVrCuwO0wWdTK2T9QUmcUUxzlMgUbwCZFWw1fpizNKKsNdpqoWsSzKYl2QzEoII0qcS1SIZ5mouq8rttlg5vtqkYUA7ZgFKeAQlewKDUqiS%2Bjb%2BN6GCm0HJlfYkmWUjzkCZrmrM0ZzR5JcHih3UrVSXV7rKxzVGE7H69XoSLp9WaBGNEMNZDJ1qha8CswBykgOflvCR7a1tkcSy4OnCMPupDxEXk3uJa76SKuyzIqOgW1ps1JyFdtsJ%2FsWTUQTyjay79Y40T1hmIhG56QFrEJ4DRVXEczaNvOZsudC3F139Gc6dNw%2B3f6iRK%2Boqswm0vZU5hC0JuJVQ%2BtrrWHxMD3EJJvGfwOcTnzrzd%2BPwrjb4B&client-request-id=c101ad0c-48f4-4868-2408-00800104006f" >
+                <div id="error" class="fieldMargin error smallText">
+                    <span id="errorText" for=""></span>
+                </div>
+    
+                <div id="formsAuthenticationArea">
+                    <div id="userNameArea">
+                        <label id="userNameInputLabel" for="userNameInput" class="hidden">User Account</label>
+                        <input id="userNameInput" name="UserName" type="email" value="" tabindex="1" class="text fullWidth"
+                            spellcheck="false" placeholder="someone@example.com" autocomplete="off"/>
+                    </div>
+    
+                    <div id="passwordArea">
+                        <label id="passwordInputLabel" for="passwordInput" class="hidden">Password</label>
+                        <input id="passwordInput" name="Password" type="password" tabindex="2" class="text fullWidth"
+                            placeholder="Password" autocomplete="off"/>
+                    </div>
+                    <div id="kmsiArea" style="display:none">
+                        <input type="checkbox" name="Kmsi" id="kmsiInput" value="true" tabindex="3" />
+                        <label for="kmsiInput">Keep me signed in</label>
+                    </div>
+                    <div id="submissionArea" class="submitMargin">
+                        <span id="submitButton" class="submit" tabindex="4" role="button"
+                            onKeyPress="if (event && event.keyCode == 32) Login.submitLoginRequest();"
+                            onclick="return Login.submitLoginRequest();">Sign in</span>
+                    </div>
+                </div>
+                <input id="optionForms" type="hidden" name="AuthMethod" value="FormsAuthentication"/>
+            </form>
+    
+                 <div id="authOptions">
+            <form id="options"  method="post" action="https://sso.wlv.ac.uk:443/adfs/ls/?SAMLRequest=nZJRT8IwFIXf%2FRVL37d1kzDXbCQIMZKgEkAffCvdBRq3dva2qP%2FebmhCQuTBp6a3p%2Fc7PbcF8qZu2djZvVrCuwO0wWdTK2T9QUmcUUxzlMgUbwCZFWw1fpizNKKsNdpqoWsSzKYl2QzEoII0qcS1SIZ5mouq8rttlg5vtqkYUA7ZgFKeAQlewKDUqiS%2Bjb%2BN6GCm0HJlfYkmWUjzkCZrmrM0ZzR5JcHih3UrVSXV7rKxzVGE7H69XoSLp9WaBGNEMNZDJ1qha8CswBykgOflvCR7a1tkcSy4OnCMPupDxEXk3uJa76SKuyzIqOgW1ps1JyFdtsJ%2FsWTUQTyjay79Y40T1hmIhG56QFrEJ4DRVXEczaNvOZsudC3F139Gc6dNw%2B3f6iRK%2Boqswm0vZU5hC0JuJVQ%2BtrrWHxMD3EJJvGfwOcTnzrzd%2BPwrjb4B&client-request-id=c101ad0c-48f4-4868-2408-00800104006f">
+                <script type="text/javascript">
+                    function SelectOption(option) {
+                        var i = document.getElementById('optionSelection');
+                        i.value = option;
+                        document.forms['options'].submit();
+                        return false;
+                    }
+                </script>
+                <input id="optionSelection" type="hidden" name="AuthMethod" />
+                <div id='authOptionLinks' class='groupMargin'></div>
+            </form>
+          </div>
+    
+            <div id="introduction" class="groupMargin">
+                <p>Enter your University email address (or UNV\username) and
+    password.</p><br><p>Example: J.Smith@wlv.ac.uk or
+    UNV\0000017</p><br><p>If you are experiencing problems signing in or have forgotten your password. 
+    You can reset your IT Account Password via your mobile phone. 
+    For more information please visit the <a href='https://www.wlv.ac.uk/password'>Password Reset</a> page. 
+    Alternatively contact the IT Service Desk during our core hours on 01902 32 2000.</p>                     
+            </div>
+    
+            <script type="text/javascript">
             //<![CDATA[
-            function ERR() {
-            }
-            ERR.report = function (email) {
-                var errors = new Errors();
-
-                var body_message = '';
-                var activityID = document.getElementById('activityID').innerText;
-                var details = document.getElementById('errorDetails');
-                if (details && details.childElementCount > 0)
-                {
-                    var children = details.childNodes;
-                    for (var i = 0; i < children.length; i++) {
-                        if (children[i].innerText && children[i].innerText != '') {
-                            body_message = body_message + children[i].innerText + "%0A";
-                        }
-                    };
+    
+                function Login() {
                 }
-                var mailto_link = 'mailto:' + email + '?subject=' + errors.reportSubject + " " + activityID + '&body=' + body_message;
-                window.location = mailto_link;
-            }
-            ERR.showDetails = function () {
-                var node = document.getElementById('errorDetails');
-                if (node) {
-                    node.style.display = (node.style.display == 'none') ? '' : 'none';
-                }
-            }
-            ERR.addDetail = function (text) {
-                var detail = document.createElement('li');
-                detail.innerText = text;
-                return detail;
-            }
-            ERR.addAgentDetails = function () {
-                var node = document.getElementById('errorDetails');
-                node.insertAdjacentElement('beforeEnd', ERR.addDetail('Cookie: ' + (navigator.cookieEnabled ? 'enabled' : 'disabled')));
-                node.insertAdjacentElement('beforeEnd', ERR.addDetail('User agent string: ' + navigator.userAgent));
-            }();
-        //]]>
-        </script>
-    </div>
+    
+                Login.userNameInput = 'userNameInput';
+                Login.passwordInput = 'passwordInput';
+    
+                Login.initialize = function () {
+    
+                    var u = new InputUtil();
+    
+                    u.checkError();
+                    u.setInitialFocus(Login.userNameInput);
+                    u.setInitialFocus(Login.passwordInput);
+                }();
+    
+                Login.submitLoginRequest = function () { 
+                    var u = new InputUtil();
+                    var e = new LoginErrors();
+    
+                    var userName = document.getElementById(Login.userNameInput);
+                    var password = document.getElementById(Login.passwordInput);
+    
+                    if (!userName.value || !userName.value.match('[@\\\\]')) {
+                        u.setError(userName, e.userNameFormatError);
+                        return false;
+                    }
+    
+                    if (!password.value) {
+                        u.setError(password, e.passwordEmpty);
+                        return false;
+                    }
+    
+                    if (password.value.length > maxPasswordLength) {
+                        u.setError(password, e.passwordTooLong);
+                        return false;
+                    }
+    
+                    document.forms['loginForm'].submit();
+                    return false;
+                };
+    
+                InputUtil.makePlaceholder(Login.userNameInput);
+                InputUtil.makePlaceholder(Login.passwordInput);
+            //]]>
+            </script>
+        </div>
 
     </div>
 
@@ -254,6 +293,6 @@ if (typeof Login != 'undefined'){
 
     </body>
 
-<!-- Mirrored from sso.wlv.ac.uk/adfs/ls/?SAMLRequest=fVHLbsIwEPwVa+95p2likSBahIpERURCD70Z40DUxKZeJ%2FTzm%2FJQ6aEc1zuzM54Zjb%2FahvRCY61kCp7tAhGSq20tdymsy5kVwzgbIWsb%2F0AnndnLlfjsBBoyECXS8yaFTkuqGNZIJWsFUsNpMXldUN926UEro7hqgEwQhTaD1LOS2LVCF0L3NRfr1SKFvTEHpI5z5C3ax6a3Gbe7D8cI3daSNZXqtPMj5xTFEsh08DA8m5PvKxVR3TDZtkKnQQfITGkuTu5TqFiDAsh8mgKLouAxqHgUhKGXPASBG9bVZidiN0h4OGAwZ4h1L35ZiJ2YSzRMmhR814stz7fcpHQTGoY09G0vjt6B5JcvP9XyHOW9fDZnENKXssytfFmUQN6ulQwAuBRAT+r6Nvn7h9k1bsj+CXfk3F7OLuPfprNv by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Oct 2022 13:21:31 GMT -->
+<!-- Mirrored from sso.wlv.ac.uk/adfs/ls/?SAMLRequest=nZJRT8IwFIXf%2FRVL37d1kzDXbCQIMZKgEkAffCvdBRq3dva2qP%2FebmhCQuTBp6a3p%2Fc7PbcF8qZu2djZvVrCuwO0wWdTK2T9QUmcUUxzlMgUbwCZFWw1fpizNKKsNdpqoWsSzKYl2QzEoII0qcS1SIZ5mouq8rttlg5vtqkYUA7ZgFKeAQlewKDUqiS+jb+N6GCm0HJlfYkmWUjzkCZrmrM0ZzR5JcHih3UrVSXV7rKxzVGE7H69XoSLp9WaBGNEMNZDJ1qha8CswBykgOflvCR7a1tkcSy4OnCMPupDxEXk3uJa76SKuyzIqOgW1ps1JyFdtsJ%2FsWTUQTyjay79Y40T1hmIhG56QFrEJ4DRVXEczaNvOZsudC3F139Gc6dNw+3f6iRK+oqswm0vZU5hC0JuJVQ+trrWHxMD3EJJvGfwOcTnzrzd+Pwrjb4B by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Oct 2022 13:49:03 GMT -->
 </html> 
 
